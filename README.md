@@ -77,9 +77,9 @@ Pengelompokan cukup reproduktif (ARI 0,854 sampai 0,958), tetapi strukturnya lem
 ├── requirements.txt
 ├── .gitignore
 ├── notebook/
-│   └── Project_B03_UTS_Final_v3.ipynb
+│   └── Project_B03_UTS_Final.ipynb
 ├── laporan/
-│   └── Laporan_Milestone1_UTS_B03_Final.docx
+│   └── Laporan_Milestone1_UTS_B03_Final_Kelompok8.docx
 ├── hasil/                         hasil_eksperimen_awal.csv, ablasi_fitur.csv, data_experiment_log.csv
 ├── figs/                          13 gambar EDA dan hasil eksperimen                    
 ```
