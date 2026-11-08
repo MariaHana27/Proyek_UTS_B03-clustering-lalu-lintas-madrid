@@ -1,0 +1,8 @@
+varian,jumlah_kolom,ARI_vs_penuh,silhouette_ruang_penuh,db_ruang_penuh,silhouette_ruang_sendiri
+Model penuh (Set A),15,1.0,0.2175,1.6023,0.2175
+tanpa intensity_per_lane,14,0.9133,0.2165,1.6027,0.2239
+tanpa rel_intensity,14,0.8101,0.2082,1.6503,0.1824
+tanpa log_intensity,14,0.8207,0.2121,1.6298,0.2073
+tanpa hour_sin dan hour_cos,13,0.6898,0.1991,1.6824,0.2139
+tanpa is_non_working,14,0.9905,0.2175,1.6016,0.2238
+tanpa highway_group,10,0.8367,0.204,1.8754,0.2259

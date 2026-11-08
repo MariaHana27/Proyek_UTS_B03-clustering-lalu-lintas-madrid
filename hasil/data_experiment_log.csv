@@ -1,0 +1,39 @@
+eksperimen,algoritma,parameter,seed,silhouette,davies_bouldin,calinski_harabasz,catatan
+Sweep K (Fitur Set A),KMeans,"k=2, n_init=5",42,0.2097,1.7627,26887.2648,
+Sweep K (Fitur Set A),KMeans,"k=3, n_init=5",42,0.2175,1.6023,20845.2,
+Sweep K (Fitur Set A),KMeans,"k=4, n_init=5",42,0.1759,1.838,18418.5756,
+Sweep K (Fitur Set A),KMeans,"k=5, n_init=5",42,0.1782,1.6864,17243.5655,
+Sweep K (Fitur Set A),KMeans,"k=6, n_init=5",42,0.1735,1.6238,16046.9748,
+Sweep K (Fitur Set A),KMeans,"k=7, n_init=5",42,0.1478,1.7377,15057.7291,
+Sweep K (Fitur Set A),KMeans,"k=8, n_init=5",42,0.1455,1.6906,14247.0095,
+Sweep K (Fitur Set A),KMeans,"k=9, n_init=5",42,0.1406,1.6239,13556.6916,
+Sweep K (Fitur Set A),KMeans,"k=10, n_init=5",42,0.1462,1.5898,12938.2238,
+Fitur Set A vs B,KMeans,K=3; A (tanpa cuaca) di ruang A,42,0.2175,1.6023,20845.2,"ARI(A,B)=0.859"
+Fitur Set A vs B,KMeans,K=3; B (+cuaca) di ruang B,42,0.1637,2.0998,15316.0709,"ARI(A,B)=0.859"
+Fitur Set A vs B,KMeans,K=3; B (+cuaca) dinilai di ruang A,42,0.2061,1.8527,20163.1143,"ARI(A,B)=0.859"
+Alternatif,Agglomerative (Ward),"K=3, n=8000",42,0.1718,1.8259,1268.7374,ARI vs KMeans=0.397
+Alternatif,KMeans (sub-sampel sama),"K=3, n=8000",42,0.1893,1.9679,1613.3455,
+Alternatif,DBSCAN,"eps=0.5, min_samples=30, n=30000",42,-0.1006,1.2603,232.6683,"cluster=21, noise=81.7%"
+Alternatif,DBSCAN,"eps=0.8, min_samples=30, n=30000",42,-0.1219,1.7717,261.2608,"cluster=54, noise=49.4%"
+Alternatif,DBSCAN,"eps=1.0, min_samples=30, n=30000",42,-0.1457,1.886,284.2885,"cluster=39, noise=31.4%"
+Alternatif,DBSCAN,"eps=1.5, min_samples=30, n=30000",42,-0.0553,1.2678,390.1785,"cluster=15, noise=2.1%"
+Alternatif,DBSCAN,"eps=2.0, min_samples=30, n=30000",42,0.2735,1.2498,1274.7628,"cluster=4, noise=0.1%"
+PCA,KMeans tanpa PCA,"K=3, 15 fitur",42,0.2175,1.6023,20845.2,fit 1.2 dtk
+PCA,KMeans + PCA(90%),"K=3, 8 komponen",42,0.2062,1.8525,20162.4986,fit 1.1 dtk; ARI vs tanpa PCA=0.859
+Kestabilan,KMeans,"K=3, seed 1-5 vs seed 42",42,,,,"ARI rata-rata=0.942, min=0.857"
+Hold-out: Baseline,B0 Label acak (K=3),seed=42,42,-0.0011,295.1667,2.0433,"metrik = data uji; batas bawah, tanpa struktur"
+Hold-out: Baseline,B1 Aturan periode waktu,5 kelompok: dini hari/pagi/siang/sore/malam,42,0.0826,2.7791,9769.1247,metrik = data uji; tanpa pembelajaran
+Hold-out: Baseline,B2 Aturan kelas jalan,5 kelompok highway_group,42,0.0827,2.9935,5515.2487,metrik = data uji; tanpa pembelajaran
+Hold-out: Baseline,B3 Aturan gabungan (jam sepi x motorway/trunk),4 kelompok,42,0.146,2.1137,8615.6341,metrik = data uji; aturan sederhana berbasis t...
+Hold-out: Kandidat,K-Means (K=3),n_init=10,42,0.2055,1.6502,19741.2683,metrik = data uji; inertia latih=645103
+Hold-out: Kandidat,K-Means (K=4),n_init=10,42,0.1714,1.8428,17708.2918,metrik = data uji; inertia latih=588735
+Hold-out: Kandidat,Gaussian Mixture (K=3),"covariance=diag, n_init=3",42,0.0838,2.6924,11328.6006,metrik = data uji; cluster lunak diubah menjad...
+Hold-out: Kandidat,Agglomerative Ward (K=3),dilatih pada 8000 baris; centroid terdekat,42,0.204,1.6592,19501.3068,metrik = data uji; latih dan uji memakai proto...
+Konsistensi,K-Means,K=3,42,,,,ARI refit uji=0.958; ARI antar-periode min=0.854
+Ablasi fitur,KMeans,K=3; Model penuh (Set A),42,0.2175,1.6023,20845.2,ARI vs penuh=1.000
+Ablasi fitur,KMeans,K=3; tanpa intensity_per_lane,42,0.2165,1.6027,20672.2415,ARI vs penuh=0.913
+Ablasi fitur,KMeans,K=3; tanpa rel_intensity,42,0.2082,1.6503,19961.7626,ARI vs penuh=0.810
+Ablasi fitur,KMeans,K=3; tanpa log_intensity,42,0.2121,1.6298,20250.9549,ARI vs penuh=0.821
+Ablasi fitur,KMeans,K=3; tanpa hour_sin dan hour_cos,42,0.1991,1.6824,19383.6744,ARI vs penuh=0.690
+Ablasi fitur,KMeans,K=3; tanpa is_non_working,42,0.2175,1.6016,20843.5025,ARI vs penuh=0.990
+Ablasi fitur,KMeans,K=3; tanpa highway_group,42,0.204,1.8754,20152.8218,ARI vs penuh=0.837

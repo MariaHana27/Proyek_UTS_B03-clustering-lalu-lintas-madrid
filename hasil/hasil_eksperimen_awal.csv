@@ -1,0 +1,11 @@
+tahap,model,parameter,validasi,silhouette_latih,silhouette_uji,db_latih,db_uji,ch_latih,ch_uji,catatan
+Baseline,B0 Label acak (K=3),seed=42,Hold-out temporal (uji: Jul-Okt 2023),-0.0019,-0.0011,394.6531,295.1667,0.6226,2.0433,"batas bawah, tanpa struktur"
+Baseline,B1 Aturan periode waktu,5 kelompok: dini hari/pagi/siang/sore/malam,Hold-out temporal (uji: Jul-Okt 2023),0.0847,0.0826,2.7346,2.7791,10115.2575,9769.1247,tanpa pembelajaran
+Baseline,B2 Aturan kelas jalan,5 kelompok highway_group,Hold-out temporal (uji: Jul-Okt 2023),0.0801,0.0827,3.0314,2.9935,5395.3871,5515.2487,tanpa pembelajaran
+Baseline,B3 Aturan gabungan (jam sepi x motorway/trunk),4 kelompok,Hold-out temporal (uji: Jul-Okt 2023),0.1528,0.146,2.0772,2.1137,9143.0682,8615.6341,aturan sederhana berbasis temuan EDA
+Kandidat,K-Means (K=3),n_init=10,Hold-out temporal (uji: Jul-Okt 2023),0.2175,0.2055,1.6023,1.6502,20845.2,19741.2683,inertia latih=645103
+Kandidat,K-Means (K=4),n_init=10,Hold-out temporal (uji: Jul-Okt 2023),0.1759,0.1714,1.838,1.8428,18418.5756,17708.2918,inertia latih=588735
+Kandidat,Gaussian Mixture (K=3),"covariance=diag, n_init=3",Hold-out temporal (uji: Jul-Okt 2023),0.0833,0.0838,2.6712,2.6924,11814.9299,11328.6006,cluster lunak diubah menjadi keras (argmax)
+Kandidat,Agglomerative Ward (K=3),dilatih pada 8000 baris; centroid terdekat,Hold-out temporal (uji: Jul-Okt 2023),0.2152,0.204,1.6115,1.6592,20581.491,19501.3068,latih dan uji memakai protokol penugasan yang ...
+Validasi,K-Means K=3,refit pada data uji,Konsistensi hold-out (ARI),,,,,,,ARI = 0.958
+Validasi,K-Means K=3,3 periode latih berbeda,Kestabilan antar-periode (ARI),,,,,,,ARI min/maks = 0.854 / 0.930
