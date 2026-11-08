@@ -81,8 +81,8 @@ Pengelompokan cukup reproduktif (ARI 0,854 sampai 0,958), tetapi strukturnya lem
 ├── laporan/
 │   └── Laporan_Milestone1_UTS_B03_Final.docx
 ├── hasil/                         hasil_eksperimen_awal.csv, ablasi_fitur.csv, data_experiment_log.csv
-├── figs/                          13 gambar EDA dan hasil eksperimen (Gambar 1 sampai 13 pada laporan)
-└── data/                          Letakkan data di sini (tidak ikut di-push)
+├── figs/                          13 gambar EDA dan hasil eksperimen
+└── data/                          
 ```
 
 Folder `figs` dan `hasil` berisi keluaran dari eksekusi notebook yang dipakai untuk menyusun laporan, sehingga angkanya sama dengan laporan. Menjalankan ulang notebook pada lingkungan atau sampel yang berbeda dapat menghasilkan angka yang sedikit berbeda.
@@ -113,6 +113,10 @@ Struktur cluster lemah, hold-out hanya satu pembagian waktu, seluruh metrik bers
 
 ## Referensi
 
-- Gómez, I., & Ilarri, S. (2026). Enriched Traffic Datasets for Madrid (Version 4) [Data set]. Mendeley Data. https://doi.org/10.17632/697ht4f65b.4
-- Gómez, I., & Ilarri, S. (2025). Advanced prediction of traffic at different temporal scales using heterogeneous data sources. IEEE Open Journal of Intelligent Transportation Systems, 6, 1539-1550. https://doi.org/10.1109/OJITS.2025.3637305
-- scikit-learn developers. (2025). scikit-learn (Version 1.6.1) [Computer software]. https://github.com/scikit-learn/scikit-learn
+[1]	A. Ramadhan, F. Achmad, I. Zulkarnain, and M. Aritsugi, “Evaluation of K-Means, DBSCAN, and Hierarchical Clustering for Strategic Segmentation of Tourism SMEs in Rembang, Indonesia,” J. Tek. Inform., vol. 6, no. 3, pp. 1605–1630, Jul. 2025, doi: 10.52436/1.jutif.2025.6.3.4602.
+[2]	I. Gómez and S. Ilarri, “Enriched Traffic Datasets for Madrid,” vol. 1, 2024, doi: 10.17632/697HT4F65B.1.
+[3]	I. Gómez and S. Ilarri, “Advanced Prediction of Traffic at Different Temporal Scales Using Heterogeneous Data Sources,” IEEE Open J. Intell. Transp. Syst., vol. 6, pp. 1539–1550, 2025, doi: 10.1109/OJITS.2025.3637305.
+[4]	T. Hermawan and E. Zuliarso, “Perbandingan Metode Recurrent Neural Network (RNN) dan Long Short-Term Memory (LSTM) untuk Prediksi Curah Hujan,” Build. Informatics, Technol. Sci., vol. 7, no. 2, pp. 1450–1463, Sep. 2025, doi: 10.47065/bits.v7i2.8099.
+[5]	M. F. E. Yuri, F. S. Pasaribu, A. B. Subuh, M. H. Naibaho, and A. Piliang, “Evaluasi Performa Gaussian Mixture Model dan K-Means terhadap Ketidakseimbangan Data pada Clustering,” J. Ilmu Komput. dan Inform. | E-ISSN  3063-9026, vol. 2, no. 4 SE-Articles, pp. 311–316, Apr. 2026, [Online]. Available: https://jurnal.globalscients.com/index.php/jiki/article/view/1252
+
+
