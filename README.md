@@ -81,8 +81,7 @@ Pengelompokan cukup reproduktif (ARI 0,854 sampai 0,958), tetapi strukturnya lem
 ├── laporan/
 │   └── Laporan_Milestone1_UTS_B03_Final.docx
 ├── hasil/                         hasil_eksperimen_awal.csv, ablasi_fitur.csv, data_experiment_log.csv
-├── figs/                          13 gambar EDA dan hasil eksperimen
-└── data/                          
+├── figs/                          13 gambar EDA dan hasil eksperimen                    
 ```
 
 Folder `figs` dan `hasil` berisi keluaran dari eksekusi notebook yang dipakai untuk menyusun laporan, sehingga angkanya sama dengan laporan. Menjalankan ulang notebook pada lingkungan atau sampel yang berbeda dapat menghasilkan angka yang sedikit berbeda.
